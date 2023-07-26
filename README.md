@@ -19,7 +19,7 @@ O objetivo deste projeto é desenvolver uma biblioteca que permita a leitura de 
 Para instalar a biblioteca, abra o terminal e digite o seguinte comando: npm install md-links-caroline-vaz
 
 Após a instalação bem-sucedida, verifique se você possui um arquivo com a extensão .md contendo links dentro dele.
-
+---
 **1. Opção para obter os caminhos, textos e links do arquivo selecionado 📂**
 
 Para visualizar os caminhos, textos e links do arquivo, execute o comando:
@@ -31,7 +31,7 @@ Para visualizar os caminhos, textos e links do arquivo, execute o comando:
 ***Exemplo:***
 
 ![](img/md-links(pathfile).png)
-
+---
 **2. Opção para validar os links do arquivo 📂**
 
 Para validar os links do arquivo com requisições HTTP, utilize a propriedade --validate.
@@ -43,7 +43,7 @@ Para validar os links do arquivo com requisições HTTP, utilize a propriedade -
 ***Exemplo:***
 
 ![](img/md-links(pathfile--validate).png)
-
+---
 **3. Opção para verificar as estatísticas dos links do arquivo 📂**
 
 Para verificar as estatísticas dos links do arquivo, utilize a propriedade --stats.
@@ -55,7 +55,7 @@ Para verificar as estatísticas dos links do arquivo, utilize a propriedade --st
 ***Exemplo:***
 
 ![](img/md-links(pathfile--stats).png)
-
+---
 **4. Opção para verificar estatísticas e validar os links do arquivo 📂**
 
 Para obter estatísticas e validar os links do arquivo, utilize a propriedade --validate --stats.
@@ -67,7 +67,7 @@ Para obter estatísticas e validar os links do arquivo, utilize a propriedade --
 ***Exemplo:***
 
 ![](img/md-links(--stats--validate).png)
-
+---
 # 3. Fluxograma 📈
 
 Fluxograma realizado para o projeto:
