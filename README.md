@@ -23,54 +23,46 @@ Após a instalação bem-sucedida, verifique se você possui um arquivo com a ex
 ## 1. Opção para obter os caminhos, textos e links do arquivo selecionado:
 
 Para visualizar os caminhos, textos e links do arquivo, execute o comando:
-<li>
-<p><strok>Comando:<strok></p>
+
+**Comando:**
 ![](img/caminhodoarquivo.png)
 
-<p><strok>Exemplo:<strok></p>
+**Exemplo:**
 ![](img/md-links(pathfile).png)
-
-</li>
 
 ## 2. Opção para validar os links do arquivo 📂
 
 Para validar os links do arquivo com requisições HTTP, utilize a propriedade --validate.
 
-<li>
-<p><strok>Comando:<strok></p>
+**Comando:**
 ![](img/--validate.png)
 
-<p><strok>Exemplo:<strok></p>
+**Exemplo:**
 ![](img/md-links(pathfile--validate).png)
-</li>
 
 ## 3. Opção para verificar as estatísticas dos links do arquivo 📂
 
 Para verificar as estatísticas dos links do arquivo, utilize a propriedade --stats.
 
-<li>
-<p><strok>Comando:<strok></p>
+**Comando:**
 ![](img/--stats.png)
 
-<p><strok>Exemplo:<strok></p>
+**Exemplo:**
 ![](img/md-links(pathfile--stats).png)
-</li>
 
 ## 4. Opção para verificar estatísticas e validar os links do arquivo 📂
 
 Para obter estatísticas e validar os links do arquivo, utilize a propriedade --validate --stats.
 
-<li>
-<p><strok>Comando:<strok></p>
+**Comando:**
 ![](img/--validate--stats.png)
 
-<p><strok>Exemplo:<strok></p>
+**Exemplo:**
 ![](img/md-links(--stats--validate).png)
-</li>
 
 # 3. Fluxograma 📈
 
-<p><strok>Fluxograma realizado para o projeto:<strok></p>
+Fluxograma realizado para o projeto:
 
 ![](img/fluxograma.jpeg)
 
