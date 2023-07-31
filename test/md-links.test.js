@@ -2,7 +2,7 @@ const path = require('path');
 const {
   validateLink,
   fileMD,
-  readAndExtractLinks,
+  readfile,
   readDir,
   mdLinks,
 } = require('../src/md-links.js');
@@ -91,7 +91,7 @@ describe('validateLink', () => {
 });
 
 // Teste para arquivo
-describe('readAndExtractLinks', () => {
+describe('readfile', () => {
   test('Traz os links de um arquivo Markdown', () => {
     const expectedLinks = [
       { href: 'https://www.example.com', text: 'Example' },
@@ -99,13 +99,13 @@ describe('readAndExtractLinks', () => {
       { href: 'https://developer.mo', text: 'mozilla' },
     ];
 
-    return readAndExtractLinks(linksPath).then((links) => {
+    return readfile(linksPath).then((links) => {
       expect(links).toEqual(expectedLinks);
     });
   });
 
   test('Rejeita com erro quando ocorre um erro na leitura do arquivo', () => {
-    return readAndExtractLinks(invalidPath).catch((error) => {
+    return readfile(invalidPath).catch((error) => {
       expect(error).toBeInstanceOf(Error);
     });
   });

@@ -28,8 +28,8 @@ mdLinks(filePath)
         const uniqueLinks = new Set();
         validatedLinks.forEach((link) => {
           const linkColor = chalk.white.bold(link.href);
-          const validateColor = link.ok === true ? chalk.green.bold('OK') : chalk.red.bold(link.ok);
-          const codColor = chalk.gray.bold(link.status || 0);
+          const validateColor = link.ok === true ? chalk.green.bold('OK') : chalk.red.bold('FAIL');
+          const codColor = chalk.gray.bold(link.status);
           const textColor = chalk.gray.bold(link.text);
           table.push([linkColor, validateColor, codColor, textColor]);
           uniqueLinks.add(link.href);
