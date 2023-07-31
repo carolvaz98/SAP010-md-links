@@ -37,14 +37,13 @@ function fileMD(filePath) {
   return ext === '.md';
 }
 
-function readAndExtractLinks(filePath) {
+function readfile(filePath) {
   return new Promise((resolve, reject) => {
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) {
         reject(new Error('Erro ao ler o arquivo.'));
         return;
       }
-
       const links = extractLinks(data);
       resolve(links);
     });
@@ -53,14 +52,14 @@ function readAndExtractLinks(filePath) {
 
 function readDir(directoryPath) {
   try {
-    const files = fs.readdirSync(directoryPath, { withFileTypes: true });
+    const files = fs.readdirSync(directoryPath, { withFileTypes: true }); // matriz de objetos
 
     const filePromises = files.map((file) => {
       const filePath = path.join(directoryPath, file.name);
       if (file.isDirectory()) {
         return readDir(filePath);
       } else if (fileMD(filePath)) {
-        return readAndExtractLinks(filePath);
+        return readfile(filePath);
       }
       return null;
     });
@@ -94,7 +93,7 @@ function mdLinks(filePath) {
             reject(error);
           });
       } else if (fileMD(absolutePath)) {
-        readAndExtractLinks(absolutePath)
+        readfile(absolutePath)
           .then((links) => {
             resolve(links);
           })
@@ -111,7 +110,7 @@ function mdLinks(filePath) {
 module.exports = {
   validateLink,
   fileMD,
-  readAndExtractLinks,
+  readfile,
   readDir,
   mdLinks,
 };
